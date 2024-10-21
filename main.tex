@@ -61,7 +61,7 @@
     stepnumber=1, % Line number increment
     numbersep=5pt, % Line number separation
     frame=single, % Frame around code
-    framexleftmargin=5mm, % Frame margin
+    framexleftmargin=5mm, % Frame margin 
     captionpos=b, % Caption position
     xleftmargin=2em, % <-- Adjust horizontal spacing here
     escapeinside={\%*}{*)} % If you want to add LaTeX within your code
@@ -89,7 +89,7 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\red}[1]{\textcolor[rgb]{1, 0, 0}{#1}}
-\newcommand{\problematic}{How can sensing techniques redefine our interaction with plants ?}
+\newcommand{\problematic}{Examining Affordances in HCI through the lense of AI.}
 %% This section is for removing the 0.*** in the sections
 \makeatletter
 \renewcommand{\thesection}{%
@@ -111,13 +111,13 @@
 \title{\problematic}
 \subtitle{\problematic}
 
-\author{Matthieu SEGUI}
+\author{Nicolas Jan STAS}
 
 \date{\today}
 
 \titlehead{\centering\includegraphics[width=6cm]{images/ift_logo.png}}
 
-\publishers{\textbf{Supervisor}\\ Clément Duhart and Marc Teyssier}
+\publishers{\textbf{Supervisor}\\ Clément Duhart, Marc Teyssier, Xiao Xiao}
 
 
 %----------------------------------------------------------------------------------------
@@ -196,6 +196,27 @@
 \KOMAoptions{twoside=false}
 
 
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGMENTS
+%----------------------------------------------------------------------------------------
+
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+I would like to express my deepest gratitude to my principal investigators, \textbf{Dr. Clément Duhart}, \textbf{Dr. Xiao Xiao}, and \textbf{Dr. Marc Teyssier}.
+A special thanks to \textbf{Dr. Duhart} for founding the DeVinci Innovation Center, where I had the privilege to study, and for guiding me as my PI.
+I am equally grateful to \textbf{Dr. Xiao} and \textbf{Dr. Teyssier} for stepping in and continuing to provide invaluable support and mentorship.
+
+To my peers, \textbf{Claudio Ortega} and \textbf{Matthieu Segui}, with whom I navigated this journey at the DVIC, thank you for your companionship and teamwork.
+I would also like to extend my heartfelt thanks to my teachers, \textbf{Dr. Gregor Jouet} and \textbf{Dr. Yliess Hati}, for their guidance and wisdom throughout my studies.
+
+I am especially thankful to the earlier generations of DVIC alumni, including \textbf{Vincent Thevenin}, \textbf{Teddy Leclercq}, \textbf{Thomas Raynal}, and \textbf{Thomas Juldo}, who have shared their knowledge and helped me grow.
+Your impact on my learning has been profound.
+
+Lastly, I am forever grateful to my parents for their unwavering support and encouragement throughout this journey.
+Without them, none of this would have been possible.
+
+\clearpage
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
@@ -236,11 +257,16 @@
 
 \include{chapters/01_introduction}
 
+\include{chapters/02_OnAffordances}
 
-\include{chapters/02_SOTA}
+\include{chapters/03_Totem}
 
-\include{chapters/03_contribution_1}
-\include{chapters/04_contribution_2}
+\include{chapters/04_LLMWhiteBoard}
+
+% \include{chapters/02_SOTA}
+
+% \include{chapters/03_contribution_1}
+% \include{chapters/04_contribution_2}
 
 \include{chapters/05_conclusion}
 

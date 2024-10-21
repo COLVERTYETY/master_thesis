@@ -1,51 +1,67 @@
+
 \section{Introduction}
 
-\subsection{Background motivation}
+\subsection{Background}
 
-I am an creative technology engineer that is passionate about embedded systems and 
-their hardware/software architecture.
-Pushed by my principal investigator and motivated by challenges, I wanted to 
-explore the intersection of biology and electronics. 
-I aim to transform plants into bio-sensors, using their natural sensing capabilities to 
-capture the human-plant interaction. Extending the capacities of a single plant, I want to create a network of 
-plant-based sensors. 
+In 2007, the launch of the iPhone marked a pivotal moment not just in mobile technology, but in human-computer interaction (HCI).
+One of its most innovative features was the virtual keyboard. At a time when physical keyboards dominated the mobile market, the iPhone’s touch screen keyboard presented a radical shift.
+Crucially, this keyboard utilized predictive text algorithms, an early application of artificial intelligence (AI) in consumer products, to improve user experience on a smaller screen.
+This AI-driven approach did not just correct mistakes but anticipated user intentions, setting a new standard for HCI.
 
-I am also interested in the use of sensor data. With no particular appetence for musical creation, 
-my principal investigator challenged me onto create a device that can use the data from the plant 
-and generate sound based on interaction. The musical generation allows the plant to be listened to and to \hl{care
-about it.}
+Since the inception of the iPhone's keyboard, the landscape of AI has undergone profound transformations, particularly with the advent of deep learning technologies.
+These advancements have not only enhanced existing interfaces but have also paved the way for new interaction paradigms.
+Today, AI is not merely a tool for enhancing user interfaces but is central to the design and implementation of innovative HCI solutions.
+It is capable of understanding and predicting user behavior, facilitating more natural and intuitive interactions between humans and machines.
 
-\subsection{Context and overview}
+\subsection{Research Domain}
 
-This research is in line with the new means of interaction and new sensors that surround us every day.
-This master's thesis seeks to use the natural capacities of plants, which are made up of thousands of sensors, and to understand them.
-This could make it possible to create plant networks and monitor the state of our green partners. 
-At the same time, it could reduce the amount of silicon needed to deploy a sensor field.
-It could also open up new possibilities in the field of Human Computer Interface research by adding a new interface.
+This thesis aims to explore the new paradigm introduced by AI in HCI and how it enables low-signaling, high-possibility affordances for both user interfaces (UI) and user experiences (UX).
+The concept of affordances in HCI refers to the potential actions that an interface offers to users, influenced by the cues and signals embedded in the design.
+AI, with its ability to infer and predict user needs, introduces a shift where affordances can transcend explicit cues, creating opportunities for seamless and dynamic interactions.
 
+\subsection{Problem Statement}
 
-\subsection{Problematic}
+The integration of AI into HCI has transformed traditional affordances, enabling interactions that are more dynamic, predictive, and adaptive.
+However, this shift raises questions about how these AI-driven affordances differ from traditional ones and how they impact user interaction.
+There is a need to understand both the opportunities and challenges that arise from designing interfaces that rely on low-signaling, high-possibility affordances.
 
-The main problematic that this master thesis will focus on is :
+\subsection{Objectives}
 
-\begin{center}
-    \textbf{How can sensing technologies redefine our interactions with plants ?}\\
-\end{center}
+The objectives of this research are:
+\begin{itemize}
+    \item To analyze how AI can foster more intuitive and expressive interactions within HCI.
+    \item To investigate the challenges that arise when designing for low-signaling, high-possibility affordances.
+    \item To explore how AI-driven affordances can enhance or hinder user interaction.
+\end{itemize}
 
-\subsection{Research domain}
+\subsection{Research Questions}
 
-Research domains on the human-plant interaction are wide. The HCI\footnote{Human Computer Interaction} field is focused
-during this master thesis. The Human Computer Interaction field focuses on the interfaces between people and computers.
-This field is at the intersection "between psychology and social sciences, on the one hand, and computer science and technology,
-on the other" \cite{carrollHUMANCOMPUTERINTERACTIONPsychology}. This master thesis aims to work onto the interaction
-we have with plants and nature and to enhance plant capabilities.
+This thesis seeks to answer the following key research questions:
 
-The plant is transformed is used as a living sensor and thus the project is reaching the instrumentation engineering 
-and electronic field. This field aims to think and create new way of capturing data to make sensors.
-A bio-living sensor such as the plant needs to be understood using sensing techniques.
+\begin{itemize}
+    \item How do AI-driven affordances differ from traditional affordances in HCI?
+    \item In what ways can AI-driven affordances enhance user interaction?
+    \item What challenges are associated with designing for low-signaling, high-possibility affordances?
+\end{itemize}
 
-The sensor making and creation field is also focused. In this master thesis plants are transformed into sensor.
-This transformation...
+\subsection{Significance}
 
+The significance of this research lies in its potential to influence how future interfaces are designed.
+By examining the evolving role of AI in HCI, this thesis seeks to contribute to the understanding of how AI can enhance user autonomy, creativity, and engagement.
+The findings could have implications for designers and engineers striving to create more responsive and adaptive systems that leverage AI to enrich the human experience.
 
-\subsection{Contributions}
+\subsection{Projects Overview and Contributions}
+
+\subsubsection{Totem Project}
+
+The Totem project explores the integration of AI and augmented reality (AR) in the realm of digital art.
+Users interact with the system using hand movements in front of a screen to generate and manipulate digital art in real-time.
+Powered by SDXL Turbo, the project uses deep learning to generate portraits, while the First Order Motion model adds dynamic motion, enabling a fluid creative process where users engage with AI as a collaborator.
+This interaction is facilitated through MediaPipe, which allows real-time hand tracking, transforming gestures into creative input.
+
+\subsubsection{LLM White Board}
+
+The LLM white board is designed to explore user collaboration with a large language model (LLM) in a live programming environment.
+This project allows users to explore physical computing concepts in AR, with spatial paradigms enabled by AI.
+Cameras capture the physical environment, while models interpret the data, and the LLM generates code based on user commands.
+The white board environment, which can be a blank canvas or overlaid on a camera feed, uses MediaPipe for object and user tracking, providing an adaptive and interactive interface that blurs the boundary between the digital and physical worlds.
