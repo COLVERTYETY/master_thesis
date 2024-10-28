@@ -21,5 +21,10 @@ makeglossaries main
 # Compile document
 pdflatex -interaction=nonstopmode main
 
+# Generate default CSS from pandoc
+pandoc -D html > docs/style.css
+
 # Compile document to HTML
-pandoc main.tex -s -o docs/index.html --bibliography=main.bib
+pandoc main.tex -s -o docs/index.html --bibliography=main.bib --css=style.css
+
+cp images/*.png docs/  # or specify image directory
