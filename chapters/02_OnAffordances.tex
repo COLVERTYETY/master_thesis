@@ -4,24 +4,23 @@
 
 \subsubsection{The Concept of Affordances in HCI}
 
-In Human-Computer Interaction (HCI), the term "affordance" plays a crucial role in understanding how users interact with interfaces,
- acting as a bridge between User Interface (UI) design and User Experience (UX).
- The concept of affordance refers to the properties or characteristics of an object (or a digital element) that indicate how it can be used, guiding users toward the appropriate action.
- It is a core principle that informs both the design of interfaces and the overall experience users have while interacting with a system.
+In Human-Computer Interaction, the term "affordance" is essential for understanding how users engage with interfaces, serving as a bridge between User Interface (UI) design and User Experience (UX).
+Affordances refer to the properties or characteristics of an object (or digital element) that suggest its possible uses, guiding users toward intended actions within an interface.
 
-Norman (1988) \cite{norman1988psychology} introduced the idea that affordances provide visual cues or hints about how an object should be used.
-These cues help users understand an object’s function without needing instructions or labels.
-For example, buttons in a user interface are designed to look clickable—whether through shading, placement, or labeling—immediately signaling to users that they should click or tap them to interact.
-Norman emphasized that affordances are a blend of an object’s actual properties and the perceived suggestion of how it can be used.
-In digital interfaces, this means that the design of an element communicates its function, such as sliders indicating adjustability or icons suggesting actions like saving or deleting.
+The concept originated with Gibson (1977) \cite{gibson1977theory}, who introduced affordances in the context of ecological psychology.
+For Gibson, affordances are action possibilities inherent in an environment that exist regardless of whether an actor perceives them.
+For example, a chair affords sitting regardless of whether someone realizes it or uses it for that purpose.
+This perspective highlights that affordances are rooted in the functional capabilities of an environment or object.
 
-This concept is deeply connected to the user experience because it shapes how easily and intuitively users can interact with an interface.
-A well-designed UI should offer affordances that make the intended interactions clear, reducing the need for users to think about how to use the system. 
-When the affordances of a design are clear, users can navigate and complete tasks with minimal friction, leading to a more seamless and satisfying UX.
+Building upon Gibson's foundational work, Norman (1988) \cite{norman1988psychology} adapted the concept to HCI, emphasizing how affordances in interfaces provide cues about possible interactions.
+Norman expanded the idea to focus on perceived affordances, explaining that objects or interface elements should offer visual hints that communicate how they can be used.
+For instance, a button's design may indicate that it is clickable, through shading, placement, or other visual markers, signaling users toward the appropriate interaction without explicit instructions.
+Norman’s interpretation underscores the role of perception in usability: an affordance is effective in HCI when it is both present and easily recognizable.
 
-Affordances also guide users by leveraging their existing mental models or prior experiences.
-For example, users expect a trash can icon to afford the action of deleting because that is a widely understood visual metaphor.
-The effectiveness of these affordances directly impacts the usability and the overall success of an interface, reinforcing the link between UI design and UX outcomes.
+This refinement of affordances into perceived cues is integral to user experience design, as it shapes how easily and intuitively users navigate an interface.
+Clear affordances reduce cognitive load, allowing users to engage with minimal friction, leading to a seamless, satisfying UX.
+By leveraging users' existing mental models, affordances can guide interactions effectively.
+For instance, a trash can icon is widely recognized as affording deletion—a shared metaphor that aids usability.
 
 \begin{figure}[h]
     \centering
@@ -31,47 +30,32 @@ The effectiveness of these affordances directly impacts the usability and the ov
     \label{fig:affordances}
 \end{figure}
 
-Gibson’s (1977) \cite{gibson1977theory} perspective on affordances in the physical world also contributes to the HCI context.
-Gibson viewed affordances as action possibilities inherent in an environment, regardless of whether the actor perceives them.
-In the context of digital systems, this can translate to functionalities that exist within a user interface but might not be immediately visible or discoverable.
-For instance, a hidden menu still has the affordance of being expandable, even if the user doesn't notice it initially.
-However, the usability of a system greatly improves when affordances are both present and easily perceivable, which is where Norman’s concept ties back into the design of intuitive interfaces.
-
-Affordances in HCI, therefore, are essential in making interfaces both functional and understandable.
-They create a bridge between the UI, which consists of the visual elements and controls, and the UX, which is how users feel and perform when interacting with the system.
-The more intuitive the affordances, the more positive the user experience, as users can operate the system effortlessly, feeling in control of the interface and its functionalities.
-
-\subsubsection{ Affordances as the Link Between UI and UX}
-
-The effectiveness of affordances directly influences the interaction between the user and the system.
-In this way, affordances serve as a critical link between UI and UX, because they shape the user’s perception of how a system should function (UI) and ensure that the system behaves in a way that meets those expectations (UX).
- Poor affordances can lead to frustration or confusion, while clear affordances contribute to an intuitive, seamless user experience.
- For example, a button that visually appears pushable but doesn’t function as expected creates a disconnect between UI and UX, undermining trust in the system.
-
-By incorporating affordances into UI design, designers ensure that users can interpret how to interact with the interface without needing to think about it.
- This predictability and ease of interaction enhance the overall user experience, making affordances a fundamental principle of successful HCI design.
-
-Affordances are crucial in bridging the gap between UI and UX by providing users with clear, understandable cues for interaction, ensuring that digital systems are both usable and enjoyable to navigate.
-
-\subsection{The Impact of Low Signaling but High Possibility Interfaces in HCI}
+Affordances in HCI enhance both functionality and understandability, forming a bridge between the UI elements users interact with and the UX that shapes their experience.
+The more intuitive and apparent these affordances, the more effortlessly users can navigate and feel in control of the interface, optimizing overall interaction.
 
 \subsubsection{Building on Affordances}
 
 In the previous section, we explored the concept of affordances as a fundamental link between User Interface (UI) and User Experience (UX).
-Affordances guide users through an interface by providing both actual and perceived cues about how an object or element can be interacted with.
+Affordances guide users through an interface by providing signals about the possibilities an action can unlock\cite{10.20380/gi2000.24}\cite{10.1177/1086026618803729}.
 When these affordances are clear, users can intuitively understand what actions are possible.
 However, as digital interfaces evolve, particularly in the realms of augmented reality (AR) and artificial intelligence (AI), we encounter new types of interfaces where affordances are less explicit.
 These \textbf{low-signaling, high-possibility} systems challenge traditional UI and UX paradigms, introducing new complexities in how users navigate and interact with the possibilities afforded by these systems.
 
 \subsubsection{ Low Signaling, High Possibility Interfaces}
 
-Low-signaling, high-possibility interfaces are characterized by the absence of clear visual or sensory cues that traditionally guide users in understanding how to interact with a system.
-Despite offering a wide range of possible interactions and outcomes, these interfaces provide minimal affordances, making it difficult for users to easily discover the full scope of functionality.
-This creates a disconnect between the vast potential of the system (high possibility) and the user's ability to perceive or act on that potential (low signaling).
+Low-signaling, high-possibility interfaces are designed with minimal explicit cues, offering limited guidance on potential interactions while enabling a broad scope of possible outcomes.
+These interfaces challenge traditional human-computer interaction frameworks, as they minimize explicit affordances, making it difficult for users to grasp the system's full functionality.
+This limited signaling can create a perceptual gap, wherein the extensive potential of the interface may not align with the user's ability to easily interpret or interact with it, creating friction in usability and discovery processes.
 
-For example, in an advanced digital system where gestures, voice commands, or implicit user behavior can trigger a variety of actions, the system may offer a high degree of interactivity.
-However, without clear visual, auditory, or haptic cues to guide the user, it can be challenging to discern what actions are available or how to perform them.
-This contrast between signaling levels and possibility levels highlights a critical design tension that impacts usability and user experience.
+In this context, the affordances competition hypothesis \cite{cisek2010neural}, offers insights into understanding how users navigate such interfaces.
+According to this hypothesis, interactive behaviors rely on simultaneous processes in which potential actions are specified and selected in real-time rather than in serial stages.
+This framework contrasts with traditional cognitive models, suggesting that users may not process low-signaling interfaces through linear steps but instead perceive and select actions dynamically, aligning more closely with real-time interactive systems that emphasize immediacy and fluidity in human-computer interactions.
+Thus, low-signaling interfaces may require users to engage in this kind of affordance competition, evaluating and selecting options in parallel rather than relying on pre-defined instructions.
+
+Moreover, research on HCI design principles underscores the importance of aligning system functionality with users' mental models to enhance overall usability and satisfaction \cite{10.1051/e3sconf/202339904037}.
+Interactive systems that complement human cognitive processes and intuitively support the user's decision-making foster a more accessible and fulfilling experience.
+In low-signaling interfaces, however, this alignment becomes challenging due to the minimal cues provided, emphasizing the need for adaptive and responsive design elements that aid users in discovering the high-possibility actions available.
+Consequently, achieving a balanced design in these interfaces requires understanding human cognition and designing responsive elements that can subtly guide user interaction without overwhelming or reducing the interface’s inherent flexibility.
 
 \subsubsection{ Signaling Levels vs. Possibility Levels}
 
@@ -82,61 +66,73 @@ To effectively design for both usability and richness in interaction, it's impor
     \item \textbf{Low Signaling, High Possibility:} These interfaces, by contrast, are complex, offering numerous interaction possibilities, but with minimal guidance or affordances. Voice command systems or gesture-based interfaces often fall into this category, where the user must experiment or learn to discover the breadth of possible interactions.
 \end{itemize}
     
-    
+
 
 In many cases, increasing signaling—through visual or other sensory affordances—enhances the user's ability to explore the full potential of a system.
- However, in emerging fields like augmented reality (AR), increasing signaling can clutter the user's experience and overwhelm the interface, limiting the immersion that AR aims to create.
+However, increasing signaling can clutter the user's experience and overwhelm the interface, limiting the immersion and fluidity.
 
-\subsection{ Augmented Reality (AR): High Possibility Limited by Signaling}
+\subsubsection{ Augmented Reality (AR): High Possibility Limited by Signaling}
 
-AR represents a prime example of the challenges posed by low-signaling, high-possibility interfaces.
-In AR, the possibilities for interaction are vast—users can interact with digital objects overlaid onto the physical world in ways that blend virtual and real elements.
-However, signaling these possibilities is often a challenge. AR environments are typically designed to be immersive, and designers must balance providing enough affordances to guide the user while avoiding excessive visual clutter that breaks the illusion of the physical-digital blend.
+Augmented Reality (AR) exemplifies the unique challenges of designing low-signaling, high-possibility interfaces\cite{10.1145/2254556.2254569}.
+In AR, users can interact with digital elements seamlessly integrated into their physical surroundings, creating opportunities to blend the virtual and real.
+However, signaling these interactions can be difficult, as too many visual cues may diminish the immersive experience, disrupting the cohesion between digital overlays and physical space.
 
-For example, an AR interface may allow users to manipulate virtual objects, trigger animations, or access additional information by performing gestures, using voice commands, or interacting with physical counterparts.
-However, without clear affordances (such as icons, buttons, or animations), users may not know how to engage with these elements.
-The high possibility for interaction is limited by the system's ability to communicate what those interactions are.
+An AR interface may offer rich interaction possibilities, such as manipulating virtual objects, triggering animations, or accessing information through gestures, voice commands, or interactions with physical items.
+However, without intuitive affordances—like context-aware hints, subtle animations, or gestures that intuitively link to real-world actions—users may struggle to understand the interface’s potential.
+The vast range of interactions that AR enables is thus limited by how effectively these options are communicated.
 
-This limitation in AR emphasizes the need for innovative signaling techniques that do not overwhelm the user but still provide enough guidance to unlock the system's full interactive potential.
-In traditional UIs, affordances are explicit; in AR, they must be more subtle, adaptive, and context-aware to maintain the immersive experience.
+Furthermore, AR introduces a unique third-person challenge: a person without AR gear cannot readily interpret the interactions between AR users and digital elements, leading to an exclusionary effect in shared physical spaces.
+This highlights the need for AR interfaces to create inclusivity by making interactions more accessible and understandable even to those without AR devices.
+Integrating AR elements into the physical environment through clear, minimalistic cues—such as small indicators or interactive physical anchors—can help bridge this gap, allowing both AR-equipped and non-equipped participants to follow the interaction flow.
+
+To achieve intuitiveness and fluidity, AR interfaces should minimize the learning curve and reduce the need for elaborate tutorials.
+The goal is to make interactions so intuitive that users can understand and engage with AR environments effortlessly, enhancing both user experience and accessibility.
+Ultimately, the goal of AR interfaces should be to achieve intuitiveness and fluidity, reducing the need for a steep learning curve or extensive tutorials.
+Effective AR affordances should allow users to explore and engage with the environment naturally, discovering interactions as they would in the physical world.
+By prioritizing intuitive, fluid interactions, AR interfaces can empower users to fully leverage the technology’s potential with minimal guidance, enhancing both usability and user experience.
 
 \subsubsection{ AI as an Enabler of High-Possibility, Low-Signaling Interfaces}
 
-Artificial intelligence (AI) provides a powerful solution to the challenges posed by low-signaling, high-possibility interfaces.
-AI-driven systems can analyze user behavior, interpret context, and dynamically provide interaction cues when needed, enabling a more fluid and intuitive experience in environments where visual or explicit affordances are minimal.
+Artificial Intelligence serves as a crucial enabler for low-signaling, high-possibility interfaces\cite{neches1986intelligence}.
+By interpreting user intent and providing contextual cues, AI enhances intuitive interaction in environments where explicit visual affordances are limited\cite{9820378}.
+Through real-time analysis of user behavior and context, AI-driven systems can offer subtle, adaptive guidance, creating an experience that feels natural and minimally intrusive.
 
-In low-signaling interfaces like voice assistants, for instance, AI allows users to interact with the system through natural language, reducing the need for explicit visual clues.
-Similarly, in AR environments, AI can interpret a user's gaze, gestures, or contextual actions to offer subtle, on-the-fly guidance.
-By dynamically adapting the interface to the user’s context, AI compensates for the lack of explicit affordances, enabling users to explore a wide range of possibilities without being overwhelmed by visual clutter.
+For instance, in low-signaling interfaces such as voice assistants, AI interprets natural language inputs, eliminating the need for traditional visual cues.
+This approach simplifies interactions, allowing users to engage seamlessly without explicit prompts.
+Similarly, in Augmented Reality environments, AI can track a user’s gaze, gestures, or position in real-time, delivering just-in-time affordances that guide the user without disrupting immersion.
+By responding dynamically to user actions, AI transforms the interface into a fluid, context-sensitive experience, enabling users to explore the system’s capabilities without facing a steep learning curve or being overwhelmed by signals.
+
+AI also addresses the "high-possibility" aspect of these interfaces by unlocking functionalities that would otherwise be inaccessible.
+Generative AI, for example, facilitates complex tasks like on-the-fly image creation, code generation, or data synthesis, all of which expand the potential actions available within an interface.
+In creative tools, this enables users to generate images, design interactive elements, or even produce code using simple, high-level commands.
+Through capabilities like generative AI, systems gain a wide range of possible interactions without requiring a corresponding increase in explicit controls, allowing users to accomplish complex tasks with minimal input.
 
 \subsubsection{ AR and AI: A Symbiotic Solution to Signaling Challenges}
 
-The integration of AI into AR represents a significant advancement in overcoming the signaling limitations of AR interfaces.
-Together, AR and AI create a hybrid interaction model where AI interprets user intent and provides subtle, context-sensitive guidance, allowing AR environments to offer rich, high-possibility interactions without overwhelming the user with too many signals.
+The convergence of Artificial Intelligence and Augmented Reality creates a powerful synergy that addresses the inherent challenges of low-signaling, high-possibility interfaces in AR environments.
+While AR offers a high degree of interaction potential by blending digital elements with physical surroundings, it is often limited by the difficulty of signaling these possibilities in an intuitive, immersive manner.
+AI, on the other hand, enables adaptive affordances, capable of interpreting user intent and dynamically generating cues, effectively bridging this gap.
 
-For example, AI can infer a user’s intent based on their actions and adaptively display affordances only when necessary—such as highlighting a virtual object when the user’s gaze rests on it or providing auditory feedback when a gesture is detected.
-This dynamic signaling system enhances the user's ability to discover and use the full range of interactions available in AR, without disrupting the immersive nature of the experience.
+In AR, the complexity of potential interactions—such as manipulating virtual objects, accessing hidden layers of information, or collaborating with others—is constrained by the system's ability to guide users effectively without overwhelming visual indicators.
+Here, AI proves invaluable.
+By analyzing gestures, gaze, and contextual factors in real time, AI can offer subtle prompts, adjust visual affordances, or predict actions, thus empowering users to explore and interact with AR content fluidly.
+For example, if a user’s gaze lingers on a virtual object, AI could provide a discreet visual cue, indicating that the object is interactive, without detracting from the overall immersive experience.
 
-By embedding AI into AR systems, designers can ensure that users are guided toward meaningful interactions, even in complex, high-possibility environments where traditional affordances might fail.
-This combination not only compensates for the signaling limitations of AR but also unlocks new possibilities for how users engage with digital systems, creating more fluid, intuitive, and rewarding experiences.
+Moreover, AI's generative capabilities elevate AR to a new level of high-possibility interaction.
+Generative AI models can dynamically create content such as images, textures, or even functional code within the AR environment, broadening the scope of what users can accomplish.
+This expands AR from a static interface to an evolving, interactive canvas where users are limited only by their imagination rather than interface constraints.
+By enabling such high-possibility functionalities, AI transforms AR from a fixed display of virtual elements to a responsive, co-creative environment.
 
-\subsubsection{ Conclusion }
+Together, AI and AR cultivate a low-signaling, high-possibility interface that enhances user experience through intuitiveness and adaptability.
+AI alleviates the signaling limitations of AR by dynamically responding to user intent, while AR provides a tangible canvas for AI-driven possibilities, blending digital and physical realms.
+This symbiotic relationship ultimately fosters an accessible, immersive environment, where users can interact freely and creatively, with minimal guidance and maximal opportunity.
 
-Low-signaling, high-possibility interfaces present unique challenges in HCI, particularly in AR environments where the richness of interaction is often limited by the ability to signal those possibilities to users.
-However, AI introduces a transformative solution by enabling adaptive, context-sensitive guidance that compensates for the lack of explicit visual affordances.
-As AR and AI converge, these technologies create interfaces that are not only immersive and rich in possibility but also intuitive and easy to navigate—bridging the gap between low-signaling and high-interaction environments.
 
-By building on the foundation of affordances discussed in the previous chapter, this chapter highlights the evolving nature of interaction design, where AI-enhanced AR systems represent the next frontier of HCI.
-These systems maintain the delicate balance between signaling and possibility, ensuring that users can fully engage with digital-physical environments without being constrained by the limitations of traditional affordance-based designs.
+\subsection{ Interpreting user actions in AR}
 
-\subsection{ Detecting User Actions in AR}
 
-\subsubsection{Introduction}
-
-Accurate detection and interpretation of user actions are essential to creating immersive and responsive augmented reality (AR) applications.
-Whether through gestures, facial expressions, or body movements, AR applications require robust mechanisms to interpret these actions in real time.
-Two key technologies— \textbf{OpenPose} \cite{cao2017realtime} and \textbf{MediaPipe} \cite{lugaresi2019mediapipe} —enable this functionality, with \textbf{MediaPipe} emerging as the keystone framework for modern AR applications due to its efficiency and versatility, particularly for lightweight edge devices.
-This chapter delves into how \textbf{MediaPipe} achieves 30 frames-per-second (FPS) body tracking on low-power devices, the optimizations made by Google, and the importance of dataset collection in making real-time interaction possible.
+Tracking user movements in AR is challenging due to the need for real-time accuracy, low latency, and efficient processing on mobile devices.
+These requirements are complicated by factors like variable lighting, fast motions, and limited device resources, all of which demand highly optimized algorithms and adaptive processing to deliver smooth, immersive interactions.
 
 \begin{figure}[h]
     \centering
@@ -146,15 +142,11 @@ This chapter delves into how \textbf{MediaPipe} achieves 30 frames-per-second (F
     \label{fig:kptracking}
 \end{figure}
 
-\subsubsection{ OpenPose: An Overview of Body Tracking}
+\subsubsection{Overview of MediaPipe for Edge Devices in AR}
 
-Before exploring MediaPipe's strengths, it’s important to understand OpenPose, a widely used framework for detecting human body keypoints.
-OpenPose tracks skeletal movements in real time, enabling AR systems to interpret user gestures and body movements by mapping them onto a digital model.
-This technology allows AR applications to respond to the user’s physical actions, offering real-time feedback such as manipulating virtual objects or controlling an environment through gestures.
-However, OpenPose's real-time tracking demands significant computational power, especially when handling multiple users or complex environments.
-This makes it challenging to implement on mobile and edge devices, where hardware constraints limit processing capacity.
-
-\subsubsection{ MediaPipe: Optimizing for Real-Time Tracking on Lightweight Devices}
+MediaPipe\cite{lugaresi2019mediapipe} is a powerful framework for enabling high-fidelity body pose estimation on edge devices.
+This framework uses a pipeline to detect and track human poses in real time, which has expanded the possibilities for AR applications by allowing overlay interactions that are responsive, intuitive, and suitable for everyday mobile devices.
+MediaPipe's flexibility allows it to run on mobile devices, desktops, and even in web environments, ensuring accessibility for diverse applications such as fitness tracking, dance, sign language recognition, and full-body gesture control.
 
 \begin{figure}[h]
     \centering
@@ -164,53 +156,83 @@ This makes it challenging to implement on mobile and edge devices, where hardwar
     \label{fig:mediapipe}
 \end{figure}
 
-While OpenPose excels at detailed body tracking, \textbf{MediaPipe} has become a game-changer for AR by enabling real-time body tracking at 30 FPS even on lightweight edge devices such as smartphones and AR glasses.
-This real-time tracking is essential for creating smooth and responsive AR experiences, especially when users rely on immediate feedback from their gestures and movements.
+In AR applications, MediaPipe Pose facilitates the seamless integration of digital content with physical movements.
+With its ability to infer 33 3D landmarks and a background segmentation mask in real time, MediaPipe provides accurate body pose tracking that supports real-world overlays.
+This makes it an ideal solution for applications that require responsiveness and precision, such as interactive exercise tutorials, real-time motion-based games, or immersive social experiences through virtual avatars.
+By delivering such features on lightweight devices, MediaPipe enables more inclusive and accessible AR solutions, broadening AR’s reach into consumer-ready devices like smartphones and AR glasses.
 
-Google’s work on \textbf{MediaPipe} involves significant optimizations to ensure that AR applications can run efficiently on devices with limited computational power, such as mobile phones.
-The key to this optimization lies in both the model architecture and the extensive dataset collection and training undertaken by Google, which enables MediaPipe to balance accuracy, speed, and low resource consumption.
+\subsubsection{ Comparison with other Frameworks}
 
-\subsubsection{ Model Optimization for Edge Devices}
+While frameworks like OpenPose\cite{cao2017realtime} have demonstrated high accuracy in pose tracking, they often depend on powerful desktop environments for processing.
+MediaPipe’s edge lies in its ability to deliver real-time pose estimation on mobile and web platforms, specifically optimized to maintain high performance on devices with limited computational resources.
 
-MediaPipe's ability to deliver high-performance body tracking on lightweight devices is rooted in several core strategies:
+MediaPipe Pose, powered by BlazePose\cite{bazarevsky2020blazepose}, adopts a two-step detector-tracker ML pipeline. The detector identifies the person or pose’s region of interest (ROI) within the frame, while the tracker predicts pose landmarks and segmentation within this ROI. This approach minimizes computational load by selectively activating the detector only for the first frame or when the tracker loses sight of the pose, ensuring that subsequent frames can rely on the previously identified ROI.
+This contrasts with frameworks like AlphaPose and Apple Vision, which typically employ continuous processing, potentially consuming more resources and leading to latency issues on mobile devices.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{arFrameworkComp.png}
+    \caption{Quality evaluation of different Frameworks on the PCK@0.2 Benchmark.}
+    \vspace{0.1cm}
+    \label{fig:arFrameworks}
+\end{figure}
+Moreover, MediaPipe’s holistic pipeline allows it to integrate multiple tasks—pose, face, and hand tracking—into one efficient graph, which is a significant differentiator from solutions requiring individual modules for each task.
+Benchmarks also demonstrate that MediaPipe’s models, like BlazePose GHUM Lite, can achieve 20ms latency on mobile devices, outperforming heavier models such as BlazePose GHUM Heavy and comparable alternatives from Apple Vision.
+This efficiency not only allows real-time tracking across various AR contexts but also opens new possibilities for developing lightweight, scalable AR applications that can run smoothly even on lower-end devices.
 
+\subsubsection{MediaPipe Holistic Architecture and Modular Design}
+
+MediaPipe Holistic is a comprehensive framework that differentiates itself from standalone models like BlazePose by integrating pose, face, and hand tracking into a unified system.
+This holistic approach offers a unique advantage for AR applications requiring real-time, multi-modal tracking across these three key body regions.
+By tracking multiple modalities within a single framework, MediaPipe Holistic enables immersive and cohesive AR experiences, allowing interactions that rely on the synchronous tracking of head, hands, and body positions—essential for applications like gesture-based controls, sign language recognition, fitness analysis, and interactive AR effects.
+
+To achieve this integration, MediaPipe Holistic relies on distinct models tailored to each tracking component (pose, face, and hands), optimized for high performance and low latency.
+Each component operates independently but is semantically aligned through a multi-stage pipeline, which leverages the strength of each model while ensuring the output remains consistent across all regions. This pipeline begins by estimating the user’s full-body pose with BlazePose’s pose detector.
+It then identifies regions of interest for each hand and the face, recropping the full-resolution input frame to improve accuracy before applying task-specific face and hand models.
+The result is a cohesive set of 543 landmarks: 33 for the body, 468 for the face, and 21 for each hand, creating an accurate, detailed, and continuous tracking solution for AR applications.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{holistic.jpeg}
+    \caption{Overview of the multi-stage pipeline in MediaPipe Holistic.}
+    \vspace{0.1cm}
+    \label{fig:holisticArchitecture}
+\end{figure}
+
+\subsubsection{Key Model Optimizations for Edge Devices}
+
+
+MediaPipe achieves exceptional performance on edge devices through a series of targeted optimizations, allowing it to deliver accurate, real-time tracking with minimal computational load.
+These optimizations are critical for enabling MediaPipe to perform smoothly on mobile devices, making it ideal for AR applications that demand low latency and responsiveness.
 
 \begin{itemize}
-    \item \textbf{1. Efficient Model Architecture:} The neural networks powering MediaPipe are optimized for efficiency, focusing on reducing computational load without sacrificing accuracy. By designing compact model architectures, Google ensures that MediaPipe can perform complex inference tasks, such as pose estimation or facial landmark detection, with minimal latency. These models are designed to minimize floating-point operations (FLOPs), reducing the strain on device resources like memory and processing power.
-    \item \textbf{2. Quantization:} One of the major optimizations employed in MediaPipe is the use of quantization techniques. In this process, model weights are reduced from 32-bit floating-point numbers to 8-bit integers, significantly reducing the size of the model and allowing it to run faster on hardware with limited capabilities. Quantized models maintain most of their accuracy while reducing both computation and memory requirements, making them ideal for real-time AR applications on edge devices.
-    \item \textbf{3. Parallel Processing:} MediaPipe leverages the ability to run multiple inference models in parallel, utilizing the multicore architecture of modern devices. This ensures that body tracking, gesture recognition, and other processing tasks can be executed simultaneously, allowing the system to remain responsive even when handling complex inputs from various sensors, such as cameras and depth sensors.
-    \item \textbf{4. Frame Skipping and Adaptive Inference:} MediaPipe can adaptively reduce the number of frames processed by dynamically skipping frames during periods of minimal movement. This adaptive inference technique saves processing power during less demanding phases while ensuring high responsiveness when movement is detected. This helps in maintaining smooth user experiences without taxing the device continuously.
-    \item \textbf{5. Efficient Data Flow:} MediaPipe operates using a graph-based pipeline, where each computational step is treated as a node in a directed graph. This design allows data to flow efficiently between nodes, with each step of the tracking process being highly modular. This pipeline structure ensures minimal latency and optimizes the use of device resources, especially important in edge devices that process sensory data in real time.
+    \item \textbf{Graph-Based Pipeline for Efficient Processing:} At the core of MediaPipe's efficiency is its graph-based pipeline, a modular structure where each computational task, such as pose detection or face tracking, functions as an independent node within a directed graph.
+    This setup allows tasks to run only when needed, reducing redundant computations and streamlining data flow through the pipeline.
+    The graph-based design also enables parallel processing by assigning distinct tasks to separate CPU or GPU cores, maximizing hardware utilization.
+    By leveraging this modular approach, MediaPipe efficiently manages real-time data flow, reducing latency and enhancing the responsiveness of AR interactions.
+
+    \item \textbf{Lightweight and Quantized Model Architecture:} To balance accuracy and computational efficiency, MediaPipe’s models are carefully designed to reduce floating-point operations (FLOPs) and minimize parameter count.
+    This lightweight architecture enables MediaPipe to perform complex inference tasks effectively even on resource-limited devices.
+    Further optimization is achieved through quantization, converting 32-bit floating-point weights to 8-bit integers, which substantially reduces memory usage and accelerates processing times without compromising accuracy.
+    This combination of a lightweight design and quantization enables MediaPipe to deliver real-time performance on mobile devices.
+
+    \item \textbf{Adaptive Inference with Frame Skipping:} MediaPipe’s adaptive inference and frame-skipping techniques are essential for managing processing power effectively.
+    By dynamically reducing processing for frames with minimal movement, MediaPipe optimizes resource usage, reducing battery drain while maintaining high responsiveness.
+    In high-motion scenarios, the system seamlessly adjusts by resuming full-frame inference to ensure consistent performance.
+    This flexibility allows MediaPipe to conserve resources during low-demand periods while maintaining the responsiveness needed for interactive AR applications.
+
+    \item \textbf{Integrated Parallel Processing:} MediaPipe takes advantage of the multicore architecture in modern mobile devices, enabling simultaneous processing across pose, hand, and face tracking components.
+    By distributing these tasks across available CPU or GPU cores, MediaPipe achieves real-time, synchronized multi-modal tracking without overloading the device’s resources.
+    This parallel processing capability is particularly valuable in AR applications where coordinated tracking of multiple regions—such as body, face, and hands—enables smooth, uninterrupted user interactions.
 \end{itemize}
 
-\subsubsection{ Dataset Collection and Training}
 
-Another cornerstone of MediaPipe’s success in real-time body tracking is the extensive and diverse dataset collection conducted by Google.
-To ensure accurate body and gesture tracking, Google gathered large amounts of video and sensory data from diverse environments, including various lighting conditions, body types, and movement patterns.
-This dataset forms the basis for training the machine learning models that power MediaPipe’s inference capabilities.
+\subsubsection{ Conclusion }
 
-\begin{itemize}
-    \item \textbf{1. Diverse Dataset:} To create robust body-tracking models, Google collected datasets that represented a wide range of human movements, facial expressions, and gestures across different demographics and environments. This diversity allows MediaPipe to maintain accuracy across different user profiles and ensures that AR applications can function reliably in different real-world scenarios.
-    \item \textbf{2. Real-World Scenarios:} MediaPipe’s dataset was designed to reflect the challenges faced by AR applications in real-world settings. This includes training models on video streams with varying levels of occlusion, motion blur, and environmental noise. By incorporating these variables, MediaPipe ensures that its models can accurately track body movements even in suboptimal conditions, such as low-light environments or when the user’s body is partially obscured by other objects.
-    \item \textbf{3. Transfer Learning:} MediaPipe leverages transfer learning to speed up the model training process. By using pre-trained models on general datasets and fine-tuning them with domain-specific data, MediaPipe can quickly adapt its models for AR applications without requiring vast computational resources or time for retraining.
-\end{itemize}
+MediaPipe stands as a pioneering framework for delivering real-time, high-fidelity tracking across multiple modalities on edge devices, making it an ideal solution for AR applications.
+Through a combination of modular graph-based architecture, adaptive inference techniques, and carefully optimized model designs, MediaPipe achieves a balance of accuracy and efficiency that enables it to run seamlessly even on resource-constrained devices.
 
-\subsubsection{ MediaPipe: The Keystone for Modern AR Applications}
-
-The result of these optimizations is that MediaPipe is now considered a foundational framework for modern AR applications, particularly those that run on edge devices.
-Its ability to deliver 30 FPS real-time body tracking on mobile devices is a major breakthrough, enabling developers to build AR systems that are both highly interactive and efficient.
-
-MediaPipe allows developers to create pipelines where user actions, such as gestures or facial expressions, are tracked and processed in real-time.
-These actions can then trigger various AR experiences, from object manipulation to facial filters, with smooth transitions and minimal delay.
-The combination of efficient model architecture, adaptive inference techniques, and a rich dataset allows MediaPipe to maintain high performance even in resource-constrained environments.
-
-\subsubsection{ Conclusion}
-
-Detecting user actions in AR is a critical component for building immersive, interactive experiences.
-While OpenPose offers advanced capabilities for tracking user body movements, MediaPipe stands out as a highly optimized solution, particularly for lightweight edge devices.
-Google's extensive work on model optimization, including techniques like quantization, adaptive inference, and parallel processing, enables MediaPipe to achieve real-time body tracking at 30 FPS on mobile devices.
-Combined with its rich dataset collection, MediaPipe provides a robust platform for modern AR applications, making it an essential tool for developers working at the intersection of AR and AI. As AR continues to evolve, MediaPipe’s optimizations for resource efficiency and real-time processing will be key to enabling more complex and responsive user interactions in future applications.
-
+The framework’s flexibility, from lightweight and quantized models to advanced data flow control and parallel processing capabilities, showcases its adaptability across a range of devices—from mobile phones to AR glasses.
+MediaPipe’s holistic approach, which integrates body, face, and hand tracking within a unified system, opens the door to immersive, interactive experiences that push the boundaries of what’s possible on mobile platforms.
+This adaptability not only supports a wide range of AR applications, such as fitness tracking, gesture-based controls, and social augmented reality, but also paves the way for future advancements in edge-based computing and user interaction.
 
 \subsection{ The Evolution of Natural Language Processing in Machine Learning}
 
@@ -252,7 +274,7 @@ This enabled better handling of long-range dependencies and opened the door for 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{trasnformer.png}
+    \includegraphics[width=\textwidth/2]{trasnformer.png}
     \caption{Overview of the Transformer architecture.}
     \vspace{0.1cm}
     \label{fig:transformer}
@@ -284,31 +306,37 @@ They allow systems to interact more naturally with users by understanding the me
 
 \subsubsection{ Semantic Operators and Their Role in HCI}
 
-In Human-Computer Interaction (HCI), semantic operators play a crucial role in designing interfaces that are more intuitive and responsive to user needs.
-Traditionally, interfaces relied on explicit affordances—visual or physical cues that guide the user’s interaction with a system.
-However, as we explored in previous sections, low-signaling, high-possibility interfaces challenge this paradigm by reducing the explicit affordances while increasing the range of possible interactions.
+In Human-Computer Interaction, semantic operators such as large language models are transforming how users interact with complex systems, especially within the framework of low-signaling, high-possibility affordances.
+As semantic operators, LLMs excel at interpreting context, predicting user intent, and generating responses that align with the user’s high-level goals, even when the interface offers few visual signals.
+The ability to support rich interaction with low signaling creates a flexible, high-possibility interface that aligns closely with natural human communication patterns.
 
-Here, LLMs as semantic operators become critical.
-They allow systems to \textbf{infer user intent}, even when the signals provided by the interface are minimal or ambiguous.
-For example, in a voice-activated system, the user may issue an incomplete or vague command, yet an LLM can interpret the context, predict intent, and generate an appropriate response.
-This ability to operate with low signaling while maintaining high interaction possibilities creates a more flexible and powerful interface.
+This interpretative power is particularly valuable in emerging technologies like augmented reality and AI-driven interfaces, where explicit affordances may be limited by the nature of the physical-digital blend.
+In these contexts, LLMs serve as the underlying layer that interprets user commands, allowing interaction through natural language or gestures without relying on predefined commands or extensive visual guidance.
 
-Semantic operators also enable interfaces to become more conversational, adaptive, and capable of handling ambiguous or context-dependent input, which is especially important in emerging technologies like \textbf{augmented reality (AR)} and \textbf{AI-driven interfaces}.
-In these environments, where explicit affordances are often limited by the physical-digital blend, LLMs can act as the interpretative layer, allowing users to interact with complex systems through natural language or gestures, without needing predefined commands or explicit instructions.
+\subsubsection{ Conclusion }
 
-\subsubsection{ Low Signaling, High Possibility Interfaces Powered by LLMs}
+The progression of natural language processing, from early N-gram models to advanced large language models, has fundamentally reshaped human-computer interaction by enabling machines to interpret, adapt, and respond to nuanced human language.
+In particular, LLMs, with their capacity to act as semantic operators, have proven essential in creating low-signaling, high-possibility interfaces—interfaces that minimize visual affordances while maximizing the range of potential actions and outcomes available to the user.
+This dynamic is especially effective in augmented reality, where LLM-driven interfaces empower users to interact intuitively through high-level instructions rather than explicit, screen-bound cues.
 
-The combination of low signaling and high possibility interfaces, as discussed in the context of AR, finds its most effective solution in \textbf{LLM-driven interfaces}.
-With LLMs functioning as semantic operators, users can interact with a system that offers numerous possibilities, but without overwhelming them with visual cues.
-This is because LLMs excel at interpreting high-level instructions and adapting to context, providing dynamic feedback or actions based on minimal input from the user.
+For example, in an AR environment, a user might simply ask, "Show me the nearest restaurant," and the system, guided by an LLM, can accurately interpret the intent and context to provide relevant, actionable information without the need for extensive visual prompts.
+This illustrates how LLMs seamlessly bridge the gap between low-signaling and high-possibility interfaces, making complex systems more accessible and natural to use.
+As LLMs continue to advance, their impact on human-computer interaction will deepen, unlocking more seamless, intelligent, and context-aware interactions that align with human intent and extend the capabilities of natural language interfaces.
 
-For instance, in an AR environment, a user might say, "Show me the nearest restaurant," without explicitly interacting with a visual affordance.
-The system, powered by an LLM, would understand the intent behind the phrase, gather the relevant information, and present it to the user.
-This is an example of how LLMs bridge the gap between \textbf{low-signaling interfaces}, where traditional affordances are sparse, and \textbf{high-possibility interfaces}, where many actions and outcomes are possible.
+\subsection{Conclusion:  The Future of AI-Driven HCI}
 
-\subsubsection{ Conclusion}
+As seen previously, the evolution and convergence of key concepts—affordances, low-signaling, high-possibility interfaces, AI, and AR—within Human-Computer Interaction (HCI).
+As this field advances, affordances continue to play a crucial role in enabling users to engage intuitively with interfaces, balancing clear cues with opportunities for exploration.
+However, as systems like AR and AI evolve, traditional affordance models are challenged, necessitating new paradigms that account for high potential actions with minimal explicit guidance.
 
-The evolution of NLP from N-grams to modern LLMs has transformed how machines process, understand, and interact with human language.
-LLMs, with their ability to function as semantic operators, have enabled machines to perform tasks once thought exclusive to human cognition, making them invaluable in HCI.
-Their role in enabling \textbf{low-signaling, high-possibility interfaces} is particularly significant, as they allow users to interact with systems in a more natural, flexible, and intuitive way.
-As LLMs continue to evolve, their impact on the future of HCI and natural language interfaces will only grow, offering new possibilities for seamless, intelligent interaction between humans and machines.
+This shift is particularly evident in low-signaling, high-possibility interfaces, where users are empowered to engage more freely yet may encounter obstacles due to limited cues.
+Here, AI emerges as a critical enabler, offering adaptive affordances that support dynamic user interactions.
+Through technologies like MediaPipe and LLMs, AI provides real-time context awareness and guidance, supporting naturalistic interaction by responding subtly to user intent and behavior.
+This synergy enhances immersive technologies such as AR, creating interfaces that feel less like static tools and more like fluid extensions of the user’s environment.
+
+The intersection of AI and AR reveals the potential for high-possibility interaction models, where user commands, gestures, or contextual cues shape experiences without the clutter of excessive signaling.
+By analyzing user inputs and behaviors, these technologies enable a smooth, intuitive interface that feels increasingly natural and accessible, ultimately facilitating a seamless blend between the physical and digital realms.
+This exploration of contemporary technologies in HCI underscores the transition from traditional affordances to dynamic, AI-driven interactions, positioning these advancements as foundational for the future of interactive and immersive systems.
+
+These insights illuminate a new era in HCI, where technological progress not only broadens the scope of human-computer interaction but also challenges designers to innovate new affordances that cater to a digitally integrated world.
+The journey from foundational affordances to adaptive, AI-enabled interfaces exemplifies a shift towards systems that empower users with unprecedented levels of interaction potential, ultimately expanding the possibilities of how we communicate and create within digital spaces.

@@ -10,7 +10,7 @@
     \label{fig:spiritofWB}
 \end{figure}
 
-% \subsection{Collaborative Paradigms in AI and HCI}
+\subsection{Collaborative Paradigms in AI and HCI}
 
 \subsubsection{Exploring Spatial and Semantic Interfaces}
 The intersection of Human-Computer Interaction (HCI) and artificial intelligence has seen significant transformations with the advent of large language models (LLMs) acting as semantic operators.
@@ -77,19 +77,11 @@ In this context, the concept of low-signaling, high-possibility affordances beco
 With minimal input from users—such as a simple command to "create a moving circle"—the LLM can generate complex, dynamic systems within a live coding environment.
 Using technologies like p5.js for graphics and Langchain for tool orchestration, these models can handle complex digital tasks, manage the execution of various functions, and even self-correct through feedback loops.
 
-\subsubsection{Langchain: Operationalizing LLMs as Semantic Operators}
-The technological backbone that enables LLMs to function as semantic operators in the LLM Whiteboard project is Langchain.
-Langchain serves both as a framework and an operational paradigm, allowing LLMs to orchestrate complex workflows by integrating various external tools and APIs.
-In the case of the LLM Whiteboard, Langchain allows the model to dynamically access and manipulate graphical entities in p5.js while also handling error correction and iteration.
 
-Langchain transforms LLMs into tool-driven operators, where the model intelligently selects the most appropriate resources for the task at hand.
-For example, when the LLM is asked to "create a bouncing ball," it can automatically generate the necessary code in p5.js while simultaneously managing the visual attributes and behaviors of the entity.
-Langchain’s orchestration of tools enables LLMs to perform complex tasks across multiple domains, making them more autonomous and capable of handling diverse user inputs in real-time.
 
-Beyond its immediate application in the LLM Whiteboard, Langchain provides the foundation for scaling LLM-based systems into more sophisticated autonomous agents.
-These agents, which we will explore in more detail, extend the operational scope of LLMs, allowing them to handle increasingly complex and large-scale tasks.
 
 \subsubsection{The Sea of LLM Agents: Scaling Semantic Capabilities}
+
 As LLMs become more powerful, they evolve from standalone operators into distributed systems of LLM agents.
 Each agent can specialize in different aspects of the task, collaborating with others to achieve higher complexity and scalability.
 This concept of a sea of LLM agents, orchestrated through frameworks like Langchain, opens up vast possibilities for building autonomous systems that can perform tasks traditionally associated with human intelligence.
@@ -130,13 +122,40 @@ By incorporating the latest advances in AI-driven autonomy and task execution, t
 
 The technical framework of the LLM Whiteboard revolves around two core technologies: Langchain and p5.js.
 
-Langchain is a language model orchestration framework that facilitates the integration of tools, APIs, and databases with LLMs.
-Within the LLM Whiteboard, Langchain enables the model to access various tools, allowing for a fluid interaction between user commands and the model's code generation capabilities.
-By structuring prompts and defining tools that LLMs can use, Langchain serves as the backbone for zero-shot prompting, ensuring that the model can generate new entities and functions on the fly.
-This architecture also supports the fallback mechanism, allowing the model to correct and iterate on its own code in real-time.
+\subsubsection{Langchain: Operationalizing LLMs as Semantic Operators}
+
+The technological backbone that empowers LLMs to operate as semantic agents within the LLM Whiteboard project is Langchain.
+Acting both as a framework and an operational paradigm, Langchain orchestrates complex workflows by integrating LLMs with external tools and APIs, transforming them into tool-driven operators.
+This allows the LLM to intelligently select the most appropriate resources for each task, making it more autonomous and responsive to user input.
+
+In the LLM Whiteboard, Langchain enables the model to dynamically access and manipulate graphical entities in p5.js while simultaneously handling error correction and iteration.
+For example, when the LLM is asked to "create a bouncing ball," it generates the required code in p5.js, while managing the visual attributes and behaviors of the entity in real time.
+This seamless interaction between user commands and the model's code generation capabilities is made possible by Langchain's orchestration logic.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth/2]{errorCL.drawio.png}
+    \caption{Diagram of the LangChain Logic used for error correction.}
+    \vspace{0.1cm}
+    \label{fig:langchainlogic}
+\end{figure}
+
+Langchain’s architecture supports zero-shot prompting, allowing the model to generate new entities and functions on the fly by accessing predefined tools and APIs.
+Furthermore, Langchain enables a robust fallback mechanism that empowers the model to correct and iterate on its code autonomously. Beyond its specific application in the LLM Whiteboard, Langchain lays the groundwork for scaling LLM-based systems into more sophisticated autonomous agents, capable of handling complex, multi-domain tasks.
+
+\subsubsection{p5.js : The Seeds of Creative Coding}
+
+\textbf{p5.js} is an open-source JavaScript library created by \textbf{Lauren McCarthy} in 2014, inspired by the Processing language developed by Casey Reas and Ben Fry.
+Its main goal is to simplify coding through an accessible and playful approach, using gamification to make programming more engaging.
+By offering real-time visual feedback, p5.js encourages experimentation, making coding less intimidating, especially for beginners.
+
+More than just a learning tool, p5.js enables a new art form that integrates visuals, audio, and interaction.
+It allows artists to create dynamic, generative works that respond to user inputs, blending technology and creativity in ways that redefine digital art.
+p5.js supports a global creative community, fostering inclusivity and accessibility in creative coding while expanding the possibilities for interactive art and multimedia experiences.
+
+\subsubsection{System Architecture}
 
 p5.js provides the graphical environment where the LLM Whiteboard brings user commands to life.
-A JavaScript library designed for creative coding, p5.js offers an intuitive framework for generating interactive graphics.
 The LLM uses this library to instantiate and manipulate entities like circles, rectangles, or more complex forms, linking abstract user inputs to visual outputs.
 p5.js’s ability to handle real-time animations and dynamic user interactions makes it an ideal platform for this form of AI-assisted creation.
 Additionally, the LLM can extend p5.js's core functionality by writing custom functions that augment the library’s capabilities, further expanding the creative space available to the user.
@@ -149,11 +168,32 @@ Additionally, the LLM can extend p5.js's core functionality by writing custom fu
     \label{fig:wbarchietcure}
 \end{figure}
 
+The LLM White Board offers multiple modalities of interaction, enhancing the user’s ability to engage with both the creative and technical aspects of the system.
+Commands can be sent via keyboard or voice, allowing users to express their high-level ideas in a flexible manner.
+Interaction with the generated creations is facilitated through either the mouse or Mediapipe, enabling intuitive control over digital entities.
+Additionally, a drop-down menu provides access to the code associated with the entities and functions created by the LLM, offering users a deeper understanding of the system’s underlying processes and actions.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{wbmenu.png}
+    \caption{Menu allowing user to see the code generated by the LLM.}
+    \vspace{0.1cm}
+    \label{fig:wbmenu}
+\end{figure}
+
 Together, these technologies form the foundation of a system that combines user-driven creativity with the autonomous problem-solving abilities of LLMs.
 The LLM Whiteboard thus stands as a demonstration of how AI can enable new forms of interaction in HCI, allowing users to explore high-possibility, low-signaling affordances that lower the barrier to creative expression while expanding the range of what can be accomplished with minimal input.
 
-\subsubsection{ How It All Comes Together}
+\subsubsection{Modes of Interaction}
 
+1. \textbf{In White Board mode}: the canvas starts as a blank space, and the collaboration between the user and the LLM is visually displayed on top of the canvas.
+This mode emphasizes a dynamic, fluid interaction, where the LLM generates code in real time based on high-level instructions from the user.
+Whether via text or voice input, the user can issue commands such as "create a circle" or "generate a wave pattern," and the LLM translates these into the corresponding p5.js code.
+
+The affordance here lies in the way the system abstracts the technical complexity behind coding.
+Rather than requiring the user to understand the intricate syntax of JavaScript or p5.js, the system transforms abstract ideas into executable functions.
+This not only accelerates the creative process but also lowers the barrier for non-technical users to engage in coding-based design.
+The error correction mechanism, enabled by Langchain, further enhances the experience by providing immediate feedback and iterating over solutions when errors arise, ensuring smooth and uninterrupted interaction.
 
 \begin{figure}[h!]
     \centering
@@ -165,10 +205,62 @@ The LLM Whiteboard thus stands as a demonstration of how AI can enable new forms
     \label{fig:wbdemo1}
 \end{figure}
 
+2. \textbf{AR mode:} The second mode extends the interaction possibilities by introducing the physical world into the equation.
+In this mode, the user’s webcam feed is overlaid onto the canvas, creating a mixed-reality environment where both digital and physical elements coexist.
+Through the integration of Mediapipe, the LLM is able to track the user’s body, hands, and face, allowing it to create entities and functions that respond to the user’s movements.
+
+For example, the LLM can be prompted to generate functions that change the color of an object based on hand gestures or move an entity in response to body position.
+This interactivity adds a new layer of immersion and control, as the user's physical presence becomes an integral part of the digital creation process.
+The affordances in this mode are defined by the system’s ability to bridge the gap between digital interaction and physical movement, creating a seamless blend of AR and AI-driven functionality.
+
+The use of AR in combination with AI allows for high-level creative experimentation that would traditionally require intricate knowledge of both computer vision and real-time interaction systems.
+Here again, the system simplifies the complex technical aspects, such as mediating between body tracking inputs and code execution, into a set of high-level commands that the LLM can interpret and act upon.
+This transforms the experience into one where the user’s natural gestures and movements become creative tools, opening up a wide range of possibilities for interactive digital experiences.
+
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{wbmenu.png}
-    \caption{Menu allowing user to see the code generated by the LLM.}
+    \includegraphics[width=\textwidth/3]{wbexpar1.png}
+    \includegraphics[width=\textwidth/3]{wbexpar2.png}
+    \includegraphics[width=\textwidth/3]{wbexpar3.png}
+    \caption{Demonstration of the AR mode of the LLM WhiteBoard in action.}
     \vspace{0.1cm}
-    \label{fig:wbmenu}
+    \label{fig:wbdemo1}
 \end{figure}
+
+\subsection{Conclusion}
+
+The \textbf{LLM Whiteboard} project demonstrates how the integration of LLMs and spatial interaction technologies can redefine the creative process within Human-Computer Interaction.
+By leveraging LLMs as semantic operators, the platform transforms high-level user commands into executable code in a live coding environment.
+This allows users to interact with digital creations more intuitively, minimizing the technical complexity typically involved in coding-based systems.
+
+The system’s dual modalities—White Board and AR—offer two distinct forms of interaction.
+In White Board mode, users can issue commands that generate dynamic entities and functions in p5.js, all within a visual, real-time canvas.
+Meanwhile, in AR mode, the physical environment is incorporated, allowing users to interact with digital objects through natural movements and gestures, tracked via Mediapipe.
+
+At its core, the LLM Whiteboard reduces the barrier for entry into digital creation, making it more accessible to non-technical users while also enabling rapid prototyping and collaboration.
+By fusing the abstract capabilities of LLMs with spatial computing, the platform opens up new avenues for interactive digital experiences.
+
+\subsubsection{Discussion}
+
+The LLM Whiteboard project sparks discussions regarding the evolving role of AI in creative processes and HCI.
+First, it highlights the potential for LLMs to act as creative collaborators rather than mere tools.
+By interpreting high-level inputs and generating complex outputs autonomously, these models take on more creative responsibility, prompting the question: how much of the creative process can or should be handed over to AI?
+
+Another crucial discussion point is the merging of spatial and semantic interfaces.
+As the platform demonstrates, spatial interactions—enabled by AR and body tracking—provide a more natural and embodied way for users to engage with digital content.
+This aligns with cognitive theories, such as the Extended Mind Theory, which suggest that cognition is distributed between the brain, body, and environment.
+The LLM Whiteboard’s ability to extend digital creation into physical space offers a glimpse into how future systems might further integrate human cognition with AI-driven environments.
+
+The system also raises questions about accessibility.
+By abstracting away the complexities of coding, it makes creative coding environments more inclusive, allowing a wider range of users to explore digital design without needing in-depth technical knowledge.
+This democratization of tools is a key trend in modern HCI and has significant implications for the future of creative technology.
+
+\subsubsection{Final Thoughts}
+
+The \textbf{LLM Whiteboard} project stands at the intersection of AI and spatial computing, offering a powerful glimpse into the future of creative collaboration in HCI.
+By using LLMs to handle the semantic layer and spatial technologies to enable natural interaction, the platform makes digital creation more intuitive, accessible, and engaging.
+The two modes—White Board and AR—offer flexible pathways for users to explore their creative ideas, whether through abstract commands or physical gestures.
+
+In doing so, the LLM Whiteboard not only reduces the technical barriers to digital creativity but also expands the possibilities for interaction.
+It bridges the gap between human intent and machine execution, showcasing how AI can become a true creative partner in the digital realm.
+The project sets a foundation for future innovations where LLMs and spatial intelligence combine to create even more immersive, adaptive, and user-driven digital experiences.

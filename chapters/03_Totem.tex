@@ -10,7 +10,7 @@
 \end{figure}
 
 The Totem platform stands at the forefront of combining Artificial Intelligence (AI) and Augmented Reality (AR) to offer a unique and innovative way of creating digital art.
-This platform integrates two cutting-edge technologies, SDXL Turbo\cite{sauer2023adversarial} and the First Order Motion deepfake model\cite{Siarohin_2019_NeurIPS}, to transform basic sketches into interactive AR experiences.
+This platform integrates two cutting-edge technologies, SDXL Turbo\cite{sauer2023adversarial} and the First Order Motion model\cite{Siarohin_2019_NeurIPS}, to transform basic sketches into interactive AR experiences.
 The Backbones of the Totem platform is GOSAI\cite{gosai2022}, an AR framework that propels Augmented Reality applications to new heights.
 
 It starts with a user's simple drawing. Using SDXL Turbo, a powerful diffusion model developed by Stability AI, these drawings are quickly turned into detailed AI-generated images.
@@ -21,7 +21,7 @@ This step is crucial in making the art not just more engaging but also more imme
 The Totem platform is more than just a tool; it's a glimpse into a new way for creators to interact with their art and for audiences to experience stories in a more engaging manner.
 
 
-\subsection{AI Totem: Exploring AI and Creativity in HCI}
+\subsection{Exploring AI and Creativity in HCI}
 
 \begin{figure}[h]
     \centering
@@ -156,7 +156,7 @@ ONNX's optimization techniques, such as operator fusion and quantization, signif
     \begin{center}
       \begin{tabular}{lccc}
         \toprule
-        framework    & latency (ms) & fps   & model size (Mo) \\
+        framework    & latency (ms)↓ & fps ↑  & model size (Mo)↓ \\
         PyTorch      & 0.069        & 14.3  & 716.4           \\
         Torch Script & 0.057        & 17.5  & 716.4           \\
         ONNX         & 0.026        & 38.46 & 279.1           \\
@@ -251,10 +251,47 @@ GOSAI manages the integration of these elements, allowing the system to run effi
 
 
 
-\subsubsection{ Conclusion}
+\subsection{Conclusion}
 
-The implementation of the \textbf{AI Totem platform} is a complex integration of AR and AI technologies, each contributing to the platform's ability to transform simple sketches into interactive, animated digital art.
-By leveraging the \textbf{GOSAI framework} for AR interaction, the \textbf{First Order Motion model} for deepfake animations, and \textbf{SDXL Turbo} for fast, high-quality image generation, the platform creates a dynamic environment where users can engage with their creations in real time.
+The \textbf{AI Totem platform} represents a convergence of Artificial Intelligence (AI) and Augmented Reality (AR), leveraging technologies like the \textbf{SDXL Turbo} diffusion model and the \textbf{First Order Motion} model.
+This fusion transforms simple sketches into dynamic, animated creations, immersing users in an interactive AR environment powered by the \textbf{GOSAI framework}.
 
-This combination of technologies not only enhances the creative process but also showcases how AI and AR can work together to push the boundaries of what is possible in digital art and HCI.
-The modular and scalable nature of the platform ensures that it can be adapted for various use cases, from interactive storytelling to educational tools, making AI Totem a powerful example of the future of creativity in the digital age.
+From a technical standpoint, the platform achieves a seamless integration of AI-driven generation and real-time AR interaction.
+The implementation challenges—such as maintaining high image quality with fast response times—are addressed through strategic use of remote endpoints for image generation and local processing for animations.
+This allows users to experience a fluid and responsive environment where creativity is enhanced by technology.
+
+However, the platform’s success is not solely due to its technical efficiency.
+Its true value lies in how it redefines the relationship between creators and their digital art.
+By automating traditionally labor-intensive processes like detailed image generation and animation, AI Totem democratizes access to complex creative tools, lowering the barrier for users with limited technical expertise.
+
+% The implementation of the \textbf{AI Totem platform} is a complex integration of AR and AI technologies, each contributing to the platform's ability to transform simple sketches into interactive, animated digital art.
+% By leveraging the \textbf{GOSAI framework} for AR interaction, the \textbf{First Order Motion model} for deepfake animations, and \textbf{SDXL Turbo} for fast, high-quality image generation, the platform creates a dynamic environment where users can engage with their creations in real time.
+
+% This combination of technologies not only enhances the creative process but also showcases how AI and AR can work together to push the boundaries of what is possible in digital art and HCI.
+% The modular and scalable nature of the platform ensures that it can be adapted for various use cases, from interactive storytelling to educational tools, making AI Totem a powerful example of the future of creativity in the digital age.
+
+\subsubsection{Discussion}
+
+The AI Totem platform opens up several intriguing discussions in the field of Human-Computer Interaction (HCI).
+First, it raises questions about the role of AI in creative processes.
+While AI augments creativity by simplifying complex tasks, does it diminish the role of human intuition in artistic expression?
+This balance between human creativity and machine assistance will continue to evolve as AI tools become more sophisticated and accessible.
+
+Another critical discussion surrounds the use of AR as a medium for digital art.
+AR offers a unique canvas where digital creations interact with the physical world.
+The immersive and interactive capabilities of AR, when combined with AI, challenge traditional forms of storytelling and artistic engagement.
+Yet, the success of such platforms relies on their usability—whether the system can offer powerful creative tools without overwhelming the user.
+In this sense, AI Totem addresses this by abstracting much of the complexity through automation, but further research into improving user interfaces and experience could lead to even more intuitive systems.
+
+Lastly, the platform also highlights the importance of performance optimization in real-time applications.
+The comparison between frameworks like PyTorch, TorchScript, and ONNX demonstrated that even small improvements in latency or resource management can significantly impact user experience, particularly in mobile or resource-constrained environments.
+This balancing act between quality, speed, and resource efficiency will be critical for future developments.
+
+\subsubsection{Final Thoughts}
+
+The \textbf{AI Totem platform} successfully bridges the gap between AI and AR, offering an accessible and immersive way to engage with digital art.
+It highlights the potential of AI-driven tools to transform creative processes, making complex tasks more manageable while allowing users to focus on their artistic expression.
+Moreover, by blending these technologies in real-time, the platform opens up new avenues for interactive storytelling and dynamic user experiences.
+
+As the boundaries between AI, AR, and HCI continue to blur, projects like AI Totem pave the way for a future where digital creativity is no longer limited by technical constraints.
+This project demonstrates that when integrated effectively, AI and AR can elevate both the creative process and the user experience, making it an essential tool in the evolving landscape of digital art and HCI.
