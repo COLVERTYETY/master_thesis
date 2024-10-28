@@ -22,4 +22,4 @@ makeglossaries main
 pdflatex -interaction=nonstopmode main
 
 # Compile document to HTML
-pandoc main.tex -s -o docs/main.html --bibliography=main.bib
+pandoc main.tex -s -o docs/index.html --bibliography=main.bib
