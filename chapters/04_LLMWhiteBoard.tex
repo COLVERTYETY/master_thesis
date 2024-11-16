@@ -30,12 +30,13 @@ This dual modality not only enhances the versatility of digital creation but als
 \subsubsection{SpatialPixel and Collaborative Interaction}
 
 Incorporating spatial affordances into digital interactions enhances both cognitive engagement and physical immersion, creating interfaces that better align with human cognition\cite{Kaptelinin2006ActingWT}.
-Researchers Violet Whitney and William Martin, through their work at SpatialPixel, highlight the importance of spatial interaction in HCI. Their work argues that cognition is deeply embodied and spatial, as human thoughts, actions, and problem-solving abilities are influenced by our physical surroundings.
+Researchers Violet Whitney and William Martin, through their work at SpatialPixel, shown in figure \ref{fig:spatialpixel}, highlight the importance of spatial interaction in HCI.
+Their work argues that cognition is deeply embodied and spatial, as human thoughts, actions, and problem-solving abilities are influenced by our physical surroundings.
 Screen-based interfaces—often limited to flat layouts—can restrict this embodied cognition, confining digital interaction to a narrow scope that stifles creativity and collaboration.
-Whitney and Martin term this limitation “flat screen, flat thoughts,”\cite{whitney2024} emphasizing the potential of spatial interfaces to break free from these restrictions.
-
+Whitney and Martin term this limitation “flat screen, flat thoughts,”\cite{whitney2024} emphasizing the potential of spatial interfaces to support human cognition. 
+% break free from these restrictions
 SpatialPixel’s approach aligns digital interfaces with physical interactions, illustrating how we think through spatial organization, much as we do in physical workspaces\cite{andy1998extended}.
-Tools like Miro and Mural, which allow users to spatially arrange information, are early examples of how digital spaces can mimic physical work arrangements.
+% Tools like Miro and Mural, which allow users to spatially arrange information, are early examples of how digital spaces can mimic physical work arrangements.
 The concept of spatial cognition\cite{Nardi1995ContextAC}, which positions the surrounding space as integral to thought processes, thus serves as an essential framework for developing immersive, AI-enhanced interfaces that allow users to interact with systems in ways that feel intuitive and spatially grounded.
 
 \begin{figure}[!h]
@@ -43,6 +44,7 @@ The concept of spatial cognition\cite{Nardi1995ContextAC}, which positions the s
     \includegraphics[width=\textwidth/3]{spatialpixel.png}
     \includegraphics[width=\textwidth/3]{spatialpixel2.png}
     \includegraphics[width=\textwidth/3]{spatialpiwel3.png}
+    \includegraphics[width=\textwidth/3]{spatialPixel3.png}
     \caption{Showcase of SpatialPixel's work on integrating spatial paradigms in LLM assisted applications.}
     \vspace{0.1cm}
     \label{fig:spatialpixel}
@@ -72,7 +74,7 @@ However, in the case of the LLM Whiteboard, we achieve a more natural interactio
 
 By translating broad user intents into precise code, the LLM reduces the technical barriers that often accompany creative digital work.
 Users can specify what they want without needing to manage every technical detail, allowing the AI to handle these specifics.
-This process exemplifies how LLMs serve as semantic interpreters, providing a fluid, intent-driven experience that broadens accessibility to digital content creation.
+This process exemplifies how LLMs serve as semantic operators, providing a fluid, intent-driven experience that broadens accessibility to digital content creation.
 
 \subsubsection{LLM-Enabled Error Handling and Iterative Algorithms}
 
@@ -84,7 +86,7 @@ When an error is thrown, the LLM analyzes the error log, cross-referencing it wi
 This iterative debugging process exemplifies how the LLM serves as a semantic algorithm, capable of aligning code output with user intent through cycles of self-correction.
 By continuously refining the generated code based on real-time feedback, the LLM can adapt to a range of failure modes and error conditions, maintaining a responsive interaction loop.
 
-\subsubsection{Ai-driven Autonomy}
+\subsubsection{AI-driven Autonomy}
 The LLM Whiteboard’s iterative approach draws inspiration from recent advancements in autonomous AI systems, such as BabyAGI\cite{nakajima2024} and AutoGPT\cite{autogpt2024}.
 These projects highlight the value of iterative orchestration, where multiple rounds of refinement lead to more accurate and contextually relevant outputs.
 In BabyAGI, for instance, recursive learning processes allow the model to learn from prior actions, progressively improving its responses to similar tasks.
@@ -98,6 +100,7 @@ This model allows for a more dynamic interaction than traditional, single-prompt
 
 \subsubsection{ Langchain as a Semantic Orchestration Tool }
 Langchain\cite{chase2022} serves as the primary orchestration framework in the LLM Whiteboard, managing real-time commands, interactions, and error correction to create a seamless user experience.
+The logic used to achieve this is shown in figure \ref{fig:langchainlogic}.
 Acting as an operational backbone, Langchain integrates the LLM with external tools and APIs, transforming it into a multi-functional system capable of handling diverse tasks dynamically.
 This framework allows the LLM to interpret user commands and translate them into code, while also autonomously correcting errors and iterating over solutions.
 
@@ -134,7 +137,7 @@ Mediapipe thus supports a low-signaling, high-possibility interface, where users
 
 \subsubsection{System Diagram}
 The system architecture of the LLM Whiteboard maps out the interaction flow between user inputs, LLM processing, and visual outputs.
-As shown in the architecture diagram, user inputs are fed into Langchain, which processes them through the LLM for code generation and error correction.
+As shown in the architecture diagram on figure \ref{fig:wbarchietcure}, user inputs are fed into Langchain, which processes them through the LLM for code generation and error correction.
 Commands are then directed to p5.js for visual rendering or to Mediapipe for spatial AR interactions.
 
 \begin{figure}[h!]
@@ -147,7 +150,7 @@ Commands are then directed to p5.js for visual rendering or to Mediapipe for spa
 
 The LLM Whiteboard provides multiple modalities for interaction, allowing users to engage via keyboard or voice commands.
 This flexibility in command input further simplifies the user experience, while the integration of Mediapipe enables intuitive control over AR-based digital entities.
-The Whiteboard also includes a drop-down menu where users can view and interact with the generated code, gaining a deeper understanding of the system’s functionality.
+The Whiteboard also includes a drop-down menu, shown in figure \ref{fig:wbmenu}, where users can view and interact with the generated code, gaining a deeper understanding of the system’s functionality.
 
 \begin{figure}[h!]
     \centering
@@ -158,41 +161,81 @@ The Whiteboard also includes a drop-down menu where users can view and interact 
 \end{figure}
 
 Together, Langchain, p5.js, and Mediapipe form the core technologies at the foundation of the LLM Whiteboard, combining real-time semantic orchestration, dynamic visual feedback, and spatial interaction.
-This integration enables users to explore a high-possibility, low-signaling interface that expands the potential for creative digital expression with minimal input and maximum interpretive freedom.
+This integration enables users to explore a high-possibility, low-signaling interface that expands the potential for creative digital expression with minimal input and maximum expressiveness.
 
+\subsubsection{Example of Command Execution }
+
+The following is an example of a user asking the whitebaord to generate some animated circles:
+
+\begin{enumerate}
+    \item A user issues a command—either by typing or through voice-to-text—such as \emph{"draw a circle"}, the system parses the input and triggers the langchain pipeline.
+    
+    \item The command is fed to the LLM, which has access to a set of tools for managing both entities and functions.
+    For the command \emph{draw a circle} the LLM selects to create a \textit{circle} entity and a \textit{drawCircle} function, representing its properties and its rendering process separately.
+    
+    \item Each tool is supported by a few-shot learning approach, which provides the LLM with examples of how similar commands were translated into code in the past.
+    These examples follow a coding style based on an "arrays of objects" paradigm, designed to optimize performance as the number of entities and their properties scale.
+    This separation into entities and functions helps keep graphical and logical components distinct, creating an organized and scalable structure for the generated code base.
+    
+    \item  The LLM-generated code is then executed within the live JavaScript environment.
+    Any errors encountered during execution are logged and looped back to the LLM, enabling a refinement process that iteratively corrects and adapts the code.
+
+    \item After each refinement, the code is re-evaluated to confirm that it meets the user’s objective.
+
+    \item When the end of the generation cycle is reached, generated functions and entities are displayed on the p5.js canvas and in the management menu.
+
+\end{enumerate}
+
+
+% When a new command, such as \emph{"animate the circles"} is issued, the LLM leverages its existing understanding of the current environment, where it recognizes that a \textit{circle} entity already exists along with its corresponding \textit{drawCircle} function.
+% The LLM thus focuses on generating only the necessary additions to fulfill the new command—in this case, a \textit{animateCircle} function.
+
+The next user command might be \emph{"animate the circles"}.
+
+\begin{enumerate}
+    \item The LLM, equipped with memory of previous code and commands, identifies that the \textit{circle} entity and \textit{drawCircle} function already exist, meaning it only needs to add an animation function to the existing entity rather than recreating it from scratch.
+    
+    \item Using the tool for function creation, the LLM writes a \textit{animateCircle} function.
+    This function may alter properties like position, size, or color over time, allowing the circles to move or change dynamically.
+    
+\end{enumerate}
+
+Through this process, the LLM Whiteboard maintains a streamlined approach, reusing existing code structures and only introducing new functions as needed, creating a fluid and adaptive user experience.
 
 \subsection{Modes of Interaction}
 
 \subsubsection{White Board Mode}
 
 % \textbf{Description and Interaction Flow}
-In White Board mode, the LLM Whiteboard offers users an open canvas, where high-level commands transform into visual elements, facilitating creative exploration without the need for programming knowledge.
-Users can type or speak commands like “create a circle” or “draw a wave pattern,” and Langchain orchestrates these inputs, enabling the LLM to interpret the commands and translate them into corresponding p5.js code.
+In White Board mode, the LLM Whiteboard offers users an open canvas. % , where high-level commands transform into visual elements, facilitating creative exploration without the need for programming knowledge.
+Users can type or speak commands like “create a circle” or “draw a wave pattern,” and Langchain orchestrates these inputs into corresponding p5.js code.%, enabling the LLM to interpret the commands and translate them into corresponding p5.js code.
+Some of the possible outcomes are shown in figure \ref{fig:wbdemo1}.
 This process abstracts the technical intricacies, letting users focus on their ideas while the system autonomously manages the code generation.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth/3]{wbexp1.png}
-    \includegraphics[width=\textwidth/3]{wbexp2.png}
-    \includegraphics[width=\textwidth/3]{wbexp3.png}
+    \includegraphics[width=\textwidth/2]{wbexp1.png}
+    \includegraphics[width=\textwidth/2]{wbexp2.png}
+    \includegraphics[width=\textwidth/2]{wbexp3.png}
     \caption{Demonstration of the LLM WhiteBoard in action.}
     \vspace{0.1cm}
     \label{fig:wbdemo1}
 \end{figure}
 
-The interaction flow here is fluid and iterative: users input commands, and the LLM immediately generates visual feedback on the canvas.
-This real-time response empowers users to interact dynamically with their creations, adjusting inputs as needed to achieve desired outcomes.
-By decoupling user input from coding syntax, White Board mode makes creative coding accessible and engaging for users across different skill levels.
+The interaction flow is fluid and iterative: users input commands, and the LLM generates visual feedback on the canvas.
+% This real-time response empowers users to interact dynamically with their creations, adjusting inputs as needed to achieve desired outcomes. ithout the need for programming knowledge
+This real-time response empowers users to interact dynamically with their creations.% without the need for programming knowledge
+By decoupling user input from coding syntax, the White Board mode makes creative coding accessible and engaging for users across different skill levels.
 
 % \textbf{Error Correction and Iterative Creation}
 To ensure a seamless user experience, Langchain manages error correction through iterative refinement.
-When the generated code encounters an issue, Langchain analyzes error logs and cross-references the error with the user’s command and initial code.
-The LLM then iteratively corrects its output, addressing issues on the fly.
-This capability allows users to create continuously without interruptions due to code errors, providing a smooth creative process.
-The iterative error correction mechanism is a key feature of White Board mode, enhancing reliability and user satisfaction by aligning outputs with user intent through minimal interaction.
+% When the generated code encounters an issue, Langchain analyzes error logs and cross-references the error with the user’s command and initial code.
+% The LLM then iteratively corrects its output, addressing issues on the fly.
+This capability allows users to create continuously without interruptions from code errors, providing a smooth creative process.
+% The iterative error correction mechanism is a key feature of White Board mode, enhancing reliability and user satisfaction by aligning outputs with user intent through minimal interaction.
 
 % \textbf{User Affordances}
-White Board mode exemplifies a low-signaling, high-possibility interface, where users provide simple, abstract commands that yield complex, meaningful outputs.
+The White Board mode exemplifies a low-signaling, high-possibility interface, where users provide simple, abstract commands that yield complex, meaningful outputs.
 This approach empowers users to explore intricate designs with minimal effort, allowing them to build complex visual compositions through a straightforward interaction model.
 The system’s affordances thus lower technical barriers, inviting users to delve into creative coding without requiring detailed knowledge of syntax or programming logic.
 
@@ -205,18 +248,19 @@ As users move or gesture, their actions directly influence the digital space, bl
 This real-world overlay allows users to manipulate virtual objects with their gestures, making spatial interaction a central part of the creative process.
 
 % \textbf{Example Interactions}
-In AR mode, user commands are translated into actions that respond to physical gestures.
-For instance, a user could command, “move object with gesture,” and then use hand motions to position or animate the object within the AR space.
+% In AR mode, user commands are translated into actions that respond to physical gestures.
+For instance, a user could command, “make the circles follow my hands,” and then use hand motions to position the circles within the AR space.
 Other commands might involve actions like changing an object’s color with a hand gesture or resizing elements by moving closer or farther from the camera.
+A sample of possibilities are shown in figure \ref{fig:wbdemo2}.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth/3]{wbexpar1.png}
-    \includegraphics[width=\textwidth/3]{wbexpar2.png}
-    \includegraphics[width=\textwidth/3]{wbexpar3.png}
+    \includegraphics[width=\textwidth/2]{wbexpar1.png}
+    \includegraphics[width=\textwidth/2]{wbexpar2.png}
+    \includegraphics[width=\textwidth/2]{wbexpar3.png}
     \caption{Demonstration of the AR mode of the LLM WhiteBoard in action.}
     \vspace{0.1cm}
-    \label{fig:wbdemo1}
+    \label{fig:wbdemo2}
 \end{figure}
 
 These interactions illustrate how users’ natural movements extend into the digital environment, creating an intuitive interface that fosters a responsive and immersive experience.
@@ -230,7 +274,7 @@ Users can move freely within their physical surroundings while manipulating digi
 
 \subsection{Project Review and Insights }
 
-The LLM Whiteboard demonstrates how the integration of semantic language models with AR-based spatial interaction can reshape Human-Computer Interaction (HCI), turning high-level commands into dynamic, interactive creations.
+The LLM Whiteboard demonstrates how the integration of semantic language models with AR-based spatial interaction can reshape HCI, turning high-level commands into dynamic, interactive creations.
 The platform’s dual modes—White Board mode for open, visual coding and AR mode for immersive spatial engagement—enable users to move beyond traditional coding constraints.
 By reducing the complexity of digital creation, the Whiteboard provides both technical and non-technical users with an accessible, intuitive interface that combines creative coding and spatial interaction.
 
@@ -238,7 +282,7 @@ The Whiteboard’s design exemplifies low-signaling, high-possibility affordance
 
 \subsubsection{Discussion}
 
-The Whiteboard repositions AI as more than a tool, framing it as a creative collaborator capable of transforming user intent into functional code while autonomously iterating and correcting errors.
+The Whiteboard repositions AI as more than a tool, framing it as a creative collaborator capable of transforming user intent into functional code.
 This dynamic challenges traditional views on AI’s role in creative processes, inviting users to engage in a co-creative relationship with AI.
 As AI systems like the Whiteboard take on a more collaborative role, they also prompt important questions about creative control, artistic ownership, and the evolving boundary between human and machine-driven creativity.
 
@@ -249,12 +293,20 @@ Through spatial affordances, the Whiteboard enriches the user’s problem-solvin
 
 A significant contribution of the Whiteboard lies in its accessibility.
 By abstracting away coding complexities, it enables a wider range of users to participate in digital design and interaction, fostering inclusivity within HCI.
-This democratization of technology aligns with broader trends in HCI that seek to make advanced tools accessible to all, encouraging creativity and collaboration across diverse user groups.
+This democratization of technology aligns with broader trends in HCI that seek to make advanced tools accessible to all.
 In making interactive digital creation more approachable, the Whiteboard demonstrates how AI-augmented platforms can expand access to creativity and innovation.
 
 \subsubsection{Final Thoughts}
-The LLM Whiteboard sets a compelling precedent for the future of HCI by integrating AI’s semantic power with spatial interaction, providing a glimpse into the potential of AI-driven, user-centered design.
-The project opens pathways for future exploration where AI and AR combine to create immersive, adaptive environments that transcend traditional interface boundaries, promoting creativity and enhancing user agency.
+% The LLM Whiteboard sets a compelling precedent for the future of HCI by integrating AI’s semantic power with spatial interaction, providing a glimpse into the potential of AI-driven, user-centered design.
+% The project opens pathways for future exploration where AI and AR combine to create immersive, adaptive environments that transcend traditional interface boundaries, promoting creativity and enhancing user agency.
 
-By merging AI-driven autonomy with spatial interactivity, the Whiteboard lays the groundwork for HCI applications that prioritize human-centric, collaborative digital experiences.
-The implications for HCI are vast, signaling a future where AI enhances human capabilities within digital spaces, offering tools that feel as intuitive and responsive as they are powerful and transformative.
+% By merging AI-driven autonomy with spatial interactivity, the Whiteboard lays the groundwork for HCI applications that prioritize human-centric, collaborative digital experiences.
+% The implications for HCI are vast, signaling a future where AI enhances human capabilities within digital spaces, offering tools that feel as intuitive and responsive as they are powerful and transformative.
+
+The LLM Whiteboard sets a compelling precedent for the future of HCI by integrating AI’s semantic power with spatial interaction, providing a glimpse into the potential of AI-driven, user-centered design.
+This project demonstrates how language models can interpret and respond to high-level commands, enabling users to intuitively generate complex outcomes with minimal input.%, which marks a significant step toward more accessible and responsive interfaces.
+Beyond individual user interactions, the LLM Whiteboard opens pathways for future exploration where AI and AR combine to create immersive, adaptive environments that transcend traditional interface boundaries, promoting creativity and enhancing user agency.
+
+By merging real-time spatial cues with dynamic language processing, this platform can evolve to support multi-user, collaborative experiences that adapt based on context.
+This convergence of AI-driven affordances and spatial engagement sets the stage for environments that do not merely respond to user actions but anticipate needs and offer relevant, context-aware support.
+Future iterations of such systems could extend beyond creative coding, finding applications in education, therapy, and collaborative workspaces where AI-augmented interfaces serve as powerful partners.
