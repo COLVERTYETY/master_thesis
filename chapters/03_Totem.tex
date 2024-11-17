@@ -33,20 +33,20 @@ The Totem addresses these limitations by simplifying the creative process throug
 This approach democratizes digital art, making advanced, interactive content creation accessible to a broader audience and reducing the need for specialized skills.
 
 \subsubsection{Technologies Overview}
-The core technologies behind Totem include SDXL Turbo\cite{sauer2023adversarial}, First Order Motion\cite{Siarohin_2019_NeurIPS}, and the GOSAI framework\cite{gosai2022}.
+The core technologies behind Totem include SDXL Turbo\cite{sauer2023adversarial}, First Order Motion\cite{Siarohin_2019_NeurIPS}, and the General Operating System for Augmented Interfaces (GOSAI)\cite{gosai2022}.
 SDXL Turbo, a state-of-the-art diffusion model by Stability AI, interprets users' sketches and enhances them with rich visual detail, transforming basic inputs into complex, artistically styled images.
 The First Order Motion model animates these creations, adding realistic movements that elevate static images into dynamic, immersive characters.
 Together, these AI models enable users to engage with their art in real-time.
 At the foundation of Totem lies the GOSAI framework. The General Operating System for Augmented Interfaces, developed at \textbf{the DeVinci Innovation Center} streamlines the development of Augmented Interfaces, allowing developers to deploy and scale digital content as an extension of the physical world.
 With these technologies, the Totem achieves a unique combination of AI and AR, exploring how digital art is created and experienced.
 
-\subsection{ System Architecture and Workflow }
+\subsection{ System Architecture and Workflow}
 
 \subsubsection{Workflow Overview}
 The Totem platform follows a structured workflow designed to transform user sketches into animated, immersive AR experiences.
 The process flows through two primary apps—Generation and Animation—each responsible for distinct parts of the user interaction.
 The Generation App enables users to create sketches in AR and stylize them in real time, while the Animation App brings these images to life with dynamic movement.
-This sequential workflow begins with the \textbf{Sketch Input} \& AI Transformation stage, followed by Animation in AR:
+This sequential workflow begins with the \textbf{Sketch Input} \& AI Transformation stage, followed by Animation in AR.
 
 \begin{itemize}
     \item \textbf{Generation App:} User sketches are processed by SDXL Turbo on a remote endpoint to create detailed portraits, which are updated in real time as the user draws.
@@ -56,7 +56,7 @@ This high-level division of tasks ensures Totem’s seamless performance by offl
 
 \subsubsection{System Architecture}
 
-The Totem platform's architecture leverages the General Operating System for Augmented Interfaces (GOSAI), to manage efficient data flow and resource allocation across its components.
+The Totem platform's architecture leverages the General Operating System for Augmented Interfaces, to manage efficient data flow and resource allocation across its components.
 At the heart of this architecture, the Redis\cite{carlson2013redis} database plays a crucial role, acting as a shared data cache to store and retrieve information across threads.
 This enables GOSAI to separate the various system drivers, applications, and compute resources while maintaining fast, synchronized data access.
 Redis allows drivers responsible for collecting and processing user inputs to interact seamlessly with the Totem’s generation and animation apps, ensuring that data is consistently available without duplication.
@@ -70,7 +70,7 @@ This architecture, shown in figure \ref{fig:diagtotem}, enhances the responsiven
     \label{fig:diagtotem}
 \end{figure}
 
-\subsubsection{ Generation App:}
+\subsubsection{ Generation App}
 
 This app allows users to create and stylize digital portraits in real time.
 Users start by drawing a sketch, which, along with a style prompt, is sent to the SDXL Turbo model via a remote endpoint.
@@ -89,7 +89,7 @@ This approach allows users to experiment freely with image creation, adjusting b
     \label{fig:imgenapp}
 \end{figure}
 
-\subsubsection{Animation App:}
+\subsubsection{Animation App}
 
 Once an image is generated, users can animate it using the Animation App.
 This app loads the created or pre-existing portraits and animates them with the First Order Motion model, which has low computational requirements, making real-time processing feasible directly on the device.
